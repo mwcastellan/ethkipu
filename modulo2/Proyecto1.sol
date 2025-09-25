@@ -1,6 +1,6 @@
-///SPDX-License_Identifier: MIT 
-// pragma solidity 0.8.26;
-pragma solidity >0.8.0;
+// SPDX-License-Identifier: MIT
+pragma solidity > 0.8.0;
+
 
 /** 
  * @title Contrato Mensaje 
@@ -26,7 +26,7 @@ contract Mensaje {
 	////////////////////////*/
 	/*
 		@notice Función utilizada para almacenar un mensaje en la blockchain
-		@param _mensaje entrada del tipo string
+		@para _mensaje entrada del tipo string
 	*/
 	function setMensaje(string memory _mensaje) external {
 		s_mensaje = _mensaje;
@@ -34,7 +34,7 @@ contract Mensaje {
 		emit Mensaje_MensajeActualizado(_mensaje);
 	}
 
-	/**
+	/*
 		*@notice función get para devolver el mensaje almacenado
 		*@return _mensaje almacenado
 	*/
