@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity > 0.8.0;
 
-
 /** 
  * @title Contrato Mensaje 
  * @author i3arba - 77 Innovation Labs 
@@ -25,8 +24,8 @@ contract Mensaje {
 					Funciones
 	////////////////////////*/
 	/*
-		@notice Función utilizada para almacenar un mensaje en la blockchain
-		@para _mensaje entrada del tipo string
+	*	@notice Función utilizada para almacenar un mensaje en la blockchain
+	*	@para _mensaje entrada del tipo string
 	*/
 	function setMensaje(string memory _mensaje) external {
 		s_mensaje = _mensaje;
@@ -34,9 +33,9 @@ contract Mensaje {
 		emit Mensaje_MensajeActualizado(_mensaje);
 	}
 
-	/*
-		*@notice función get para devolver el mensaje almacenado
-		*@return _mensaje almacenado
+    /*
+    *   @notice función get para devolver el mensaje almacenado
+    *   @return _mensaje almacenado
 	*/
 	function getMensaje() public view returns(string memory mensaje_){
 		mensaje_ = s_mensaje;
